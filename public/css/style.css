@@ -1,0 +1,93 @@
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: '__fyranSans_d0c9de", "__fyranSans_Fallback_d0c9de';
+    color: var(--color-text);
+}
+
+:root {
+    --color-primary: #f71c1c;
+    --color-secondary: #ffffff;
+    --color-tertiary: #ff0000;
+    --color-text: #222222;
+    --color-background: #f1f1f1;
+    --rounded-corners: 1ch;
+}
+
+.container {
+    background-color: var(--color-background);
+    width: min(80ch, 100vw - 2rem);
+    margin-inline: auto;
+}
+
+.navbar {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    place-content: start start;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    place-content: start start;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.screamer {
+    padding-top: 1rem;
+    border-radius: var(--rounded-corners);
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: left;
+    font-size: medium;
+}
+
+.screamer h1 {
+    padding-left: 3rem;
+    font-size: xx-large;
+    color: var(--color-primary);
+}
+
+.screamer p {
+    padding-left: 1rem;
+    font-size: x-large;
+    color: var(--color-text);
+}
+
+.top-navbar {
+    place-content: start;
+}
+
+.news {
+    border-radius: var(--rounded-corners);
+    background-color: var(--color-secondary);
+}
+
+.news h1 {
+    padding: 1rem;
+    font-size: xx-large;
+    color: var(--color-text);
+}
+
+.news img {
+    border-radius: var(--rounded-corners);
+    width: 100%;
+    height: auto;
+}
