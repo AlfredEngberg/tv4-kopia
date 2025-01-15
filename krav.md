@@ -6,10 +6,11 @@ html och css
 mobilanpassning
 
 ## Landing page / nyhetsflöde 
-navbar
+navbar ✔
 screamer ✔ 
 artiklar ✔
-annonser
 sidebar 
+
+annonser
 
 Börja med HTML och CSS 

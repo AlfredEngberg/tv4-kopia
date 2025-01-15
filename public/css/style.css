@@ -72,10 +72,6 @@ nav a {
     color: var(--color-primary);
 }
 
-#selected {
-    color: var(--color-primary);
-}
-
 @media screen and (max-width: 559px) {
     .top-navbar .btn-nav {
         display: none;
@@ -108,13 +104,19 @@ nav a {
 
 /* News articles */
 .news {
+    max-width: 50rem;
     margin: 1rem;
     border-radius: var(--rounded-corners);
     background-color: var(--color-secondary);
 }
 
 .news h1 {
-    padding: 1rem;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: center;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
     font-size: x-large;
     color: var(--color-text);
 }
@@ -130,6 +132,38 @@ nav a {
     padding-top: 1rem;
     font-size: medium;
     color: var(--color-text);
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+
+.not-sidebar {
+    flex-basis: 0;
+    flex-grow: 999;
+}
+
+.grid {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1;
+}
+
+/* Card */
+.card img {
+    max-width: 10rem;
 }
 
 /* Footer */
