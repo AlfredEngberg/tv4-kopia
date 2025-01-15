@@ -1,7 +1,15 @@
 # Krav spec
-Gör en TV4 Nyheter klon
-Landing page / nyhetsflöde 
-Börja med HTML och CSS 
+## Gör en TV4 Nyheter klon
+
+Landing page
+html och css
+mobilanpassning
+
+## Landing page / nyhetsflöde 
+navbar
+screamer ✔ 
+artiklar ✔
+annonser
 sidebar 
-screamer 
-✔
+
+Börja med HTML och CSS 

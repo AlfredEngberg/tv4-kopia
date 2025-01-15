@@ -10,11 +10,17 @@ h6 {
     color: var(--color-text);
 }
 
+body {
+    background-color: var(--color-background);
+}
+
 :root {
     --color-primary: #f71c1c;
     --color-secondary: #ffffff;
+    --color-footer: #f8e8bd;
     --color-tertiary: #ff0000;
     --color-text: #222222;
+    --color-shadow: #d6d6d6;
     --color-background: #f1f1f1;
     --rounded-corners: 1ch;
 }
@@ -25,31 +31,60 @@ h6 {
     margin-inline: auto;
 }
 
-.navbar {
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
-    place-content: start start;
-    padding: 0;
+/* Navbar */
+
+nav .selected {
+    color: var(--color-primary);
 }
 
 nav {
+    overflow-x: auto;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    place-content: start start;
     padding: 0;
 }
 
-.nav-item {
+nav a {
     padding: 1rem;
+    text-decoration: none;
+    color: var(--color-text);
+    white-space: nowrap;
+    align-items: center;
+    place-content: center;
 }
 
+.top-navbar {
+    place-content: center;
+    display: flex;
+    border-bottom-style: solid;
+    border-color: var(--color-shadow);
+    background-color: var(--color-secondary);
+}
+
+.bottom-navbar {
+    place-content: center;
+    display: flex;
+    background-color: var(--color-secondary);
+}
+
+.logo {
+    padding: 1rem;
+    font-size: x-large;
+    color: var(--color-primary);
+}
+
+#selected {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 559px) {
+    .top-navbar .btn-nav {
+        display: none;
+    }
+}
+
+/* Screamer */
 .screamer {
-    padding-top: 1rem;
+    margin: 1rem;
     border-radius: var(--rounded-corners);
     background-color: var(--color-secondary);
     display: flex;
@@ -60,7 +95,7 @@ nav {
 }
 
 .screamer h1 {
-    padding-left: 3rem;
+    padding-left: 1rem;
     font-size: xx-large;
     color: var(--color-primary);
 }
@@ -71,18 +106,16 @@ nav {
     color: var(--color-text);
 }
 
-.top-navbar {
-    place-content: start;
-}
-
+/* News articles */
 .news {
+    margin: 1rem;
     border-radius: var(--rounded-corners);
     background-color: var(--color-secondary);
 }
 
 .news h1 {
     padding: 1rem;
-    font-size: xx-large;
+    font-size: x-large;
     color: var(--color-text);
 }
 
@@ -90,4 +123,25 @@ nav {
     border-radius: var(--rounded-corners);
     width: 100%;
     height: auto;
+}
+
+.news p {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: medium;
+    color: var(--color-text);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    padding: 1rem;
+}
+
+main {
+    gap: 3rem;
 }
